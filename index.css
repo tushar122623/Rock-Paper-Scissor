@@ -1,0 +1,202 @@
+/* General Styling */
+body {
+    background: linear-gradient(135deg, #4b6cb7, #182848); /* Gradient background */
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    overflow: auto; /* Allow scrolling for mobile screens */
+    margin: 0;
+}
+
+.title {
+    font-size: 45px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 40px;
+    animation: fadeIn 2s ease-out;
+}
+
+/* Animation for title */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.move-display {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px; /* Space between the player and computer moves */
+    flex-wrap: wrap; /* Ensure that elements wrap on smaller screens */
+}
+
+.moves-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.move-container p {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+    color: white;
+}
+
+.vs-text {
+    font-size: 30px;
+    font-weight: bold;
+    color: #FFD700; /* Gold color for contrast */
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.move-button {
+    background-color: transparent;
+    border: 2px solid #fff;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.move-button:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: scale(1.1);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.move-icon {
+    height: 70px;
+    width: 70px;
+}
+
+.result {
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 40px;
+    color: #FFD700; /* Gold color for the result */
+    animation: fadeIn 2s ease-out;
+}
+
+.score {
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.reset-score-button {
+    background-color: #ff4d4d;
+    color: white;
+    border: 2px solid #ff1a1a;
+    font-size: 18px;
+    padding: 12px 24px;
+    cursor: pointer;
+    border-radius: 8px;
+    margin-top: 30px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.reset-score-button:hover {
+    background-color: #ff1a1a;
+    border-color: #e60000;
+    transform: scale(1.1);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.reset-score-button:active {
+    background-color: #e60000;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transform: scale(1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .move-button {
+        width: 100px;
+        height: 100px;
+    }
+
+    .move-icon {
+        height: 55px;
+        width: 55px;
+    }
+
+    .title {
+        font-size: 35px;
+    }
+
+    .result {
+        font-size: 24px;
+    }
+
+    .reset-score-button {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+}
+
+/* Mobile view adjustments */
+@media (max-width: 480px) {
+    body {
+        overflow-y: scroll; /* Ensure scrolling works for mobile */
+    }
+
+    .move-display {
+        flex-direction: column; /* Stack images and text vertically */
+        gap: 15px; /* Reduce gap for smaller screens */
+    }
+
+    .move-button {
+        width: 80px;
+        height: 80px;
+    }
+
+    .move-icon {
+        width: 50px;
+        height: 50px;
+    }
+
+    .vs-text {
+        font-size: 24px;
+        margin: 10px 0;
+    }
+
+    .result {
+        font-size: 20px;
+        margin-top: 20px;
+    }
+
+    .reset-score-button {
+        font-size: 16px;
+        padding: 8px 16px;
+    }
+}
+
+
+
+
+
+
+
+

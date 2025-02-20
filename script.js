@@ -63,12 +63,12 @@ function playGame(playerMove){
     document.querySelector('.js-moves').innerHTML = `
         <div class="move-display">
             <div class="move-container">
-                <img src="/${playerMove}-emoji.png" class="move-icon">
+                <img src="${playerMove}-emoji.png" class="move-icon">
                 <p>You</p>
             </div>
             <div class="vs-text">VS</div>
             <div class="move-container">
-                <img src="/${computerMove}-emoji.png" class="move-icon">
+                <img src="${computerMove}-emoji.png" class="move-icon">
                 <p>Computer</p>
             </div>
         </div>

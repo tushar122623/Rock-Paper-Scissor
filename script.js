@@ -12,7 +12,7 @@ updateScore();
 
 
 
-console.log(result); 
+// console.log(result); 
 
 function playGame(playerMove){
     const computerMove = pickComputerMove();
@@ -63,12 +63,12 @@ function playGame(playerMove){
     document.querySelector('.js-moves').innerHTML = `
         <div class="move-display">
             <div class="move-container">
-                <img src="${playerMove}-emoji.png" class="move-icon">
+                <img src="./images/${playerMove}-emoji.png" class="move-icon" alt="Image">
                 <p>You</p>
             </div>
             <div class="vs-text">VS</div>
             <div class="move-container">
-                <img src="${computerMove}-emoji.png" class="move-icon">
+                <img src="./images/${computerMove}-emoji.png" class="move-icon" alt="Image">
                 <p>Computer</p>
             </div>
         </div>
@@ -78,7 +78,7 @@ function playGame(playerMove){
 
 function resultUpdate(){
     document.querySelector('.js-result').innerHTML = result ;
-    document.querySelector('.js-moves').innerHTML = `you picked ${playerMove}. computer picked ${computerMove}. ${result}`;
+    document.querySelector('.js-moves').innerHTML = `you picked ${playerMove}. computer picked ${pickComputerMove}. ${result}`;
 }
  
 function updateScore(){

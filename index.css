@@ -194,9 +194,60 @@ body {
 }
 
 
+/* Mobile view adjustments for 375px to 667px */
+@media (max-width: 667px) and (min-width: 375px) {
+    .title {
+        font-size: 20px; /* Reduce title size to fit in one line */
+        letter-spacing: 1px; /* Adjust spacing */
+        margin-bottom: 20px; /* Reduce margin to save space */
+        padding: 0 10px;
+        animation: fadeIn 2s ease-out;
+    }
 
+    /* Animation for title */
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    .move-display {
+        flex-direction: column; /* Stack moves vertically */
+        gap: 10px; /* Reduce gap between player and computer moves */
+    }
 
+    .moves-container {
+        gap: 10px; /* Reduce space between move buttons */
+        margin-bottom: 10px; /* Reduce bottom margin */
+    }
 
+    .move-button {
+        width: 80px; /* Reduce button size */
+        height: 80px;
+    }
 
+    .move-icon {
+        width: 50px; /* Reduce icon size */
+        height: 50px;
+    }
 
+    .vs-text {
+        font-size: 22px; /* Reduce text size */
+        margin: 5px 0;
+    }
 
+    .result {
+        font-size: 22px;
+        margin-top: 15px;
+    }
+
+    .reset-score-button {
+        font-size: 14px;
+        padding: 8px 16px;
+        margin-top: 15px; /* Adjust margin so it stays within the screen */
+    }
+}

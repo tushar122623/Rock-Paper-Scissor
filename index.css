@@ -194,7 +194,7 @@ body {
 }
 
 
-<<<<<<< HEAD
+
 /* Mobile view adjustments for 375px to 667px */
 @media (max-width: 667px) and (min-width: 375px) {
     .title {
@@ -252,11 +252,3 @@ body {
         margin-top: 15px; /* Adjust margin so it stays within the screen */
     }
 }
-=======
-
-
-
-
-
-
->>>>>>> 9cd9a454c5729acb7c09e3ccb39b0ae1269f675a
